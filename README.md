@@ -4,7 +4,7 @@ Talk DEV to me is a monthly show on [twitch.tv/aws](twitch.tv/aws) hosted by [Ti
 
 > ⚠️ If you have ideas, topics or suggestions for future episodes, feel free to open an issue, we are happy to follow up and discuss it with you. Also, feel free to drop us any feedback what we can improve.
 
-Don't miss the next epidosde and make sure to star or watch the repo or follow us on Twitter: [t1agoB](https://twitter.com/t1agoB), [am29d](https://twitter.com/am29d)
+Don't miss the next episode and make sure to star or watch the repo or follow us on Twitter: [t1agoB](https://twitter.com/t1agoB), [am29d](https://twitter.com/am29d)
 
 ## Episodes
 
