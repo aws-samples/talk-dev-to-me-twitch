@@ -23,3 +23,10 @@ def test_call_api_return_product_when_given_id():
     api_url = get_api_gw_url()
     product = requests.get(f"{api_url}/products/1").json()
     assert product == [{"productId": "1", "name": "Mechanical Keyboard 9000", "price": 3549, "discount": "10%"}]
+
+
+def test_call_api_return_empty_when_no_id_given():
+    api_url = get_api_gw_url()
+    resp = requests.get(f"{api_url}/products/3").json()
+    assert resp == []
+

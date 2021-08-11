@@ -34,15 +34,25 @@ def test_app_retuns_product_by_id():
     assert products[0]['price'] == 3549
 
 
-def test_app_adds_discount_for_premium_features():
+def test_app_adds_discount_for_all_users(mocker):
     product = [{"productId": "1", "name": "Mechanical Keyboard 9000", "price": 3549}]
-    product_with_discount = app.add_premium_info(product, True)
+    mocked_app_config_schema = {
+        "discount": {
+            "default": True
+        }
+    }
+
+    init_feature_flags(mocker=mocker, mock_schema=mocked_app_config_schema)
+
+    product_with_discount = app.add_discount(product)
     assert product_with_discount[0]["discount"] == "10%"
 
-
-def test_premium_feature_flag_is_true_with_ctx(mocker):
-    expected_value = True
+def test_app_adds_discount_for_premium_users(mocker):
+    product = [{"productId": "1", "name": "Mechanical Keyboard 9000", "price": 3549}]
     mocked_app_config_schema = {
+        "discount": {
+            "default": True
+        },
         "premium_features": {
             "default": False,
             "rules": {
@@ -58,73 +68,9 @@ def test_premium_feature_flag_is_true_with_ctx(mocker):
                 }
             }
         },
-        "tier_feature": {
-            "default": True
-        }
     }
 
-    # WHEN
-    ctx = {"tier": "premium"}
-    feature_flags = init_feature_flags(mocker=mocker, mock_schema=mocked_app_config_schema)
-    flag = feature_flags.evaluate(name="premium_features", context=ctx, default=False)
-    assert flag == expected_value
+    init_feature_flags(mocker=mocker, mock_schema=mocked_app_config_schema)
 
-
-def test_premium_feature_flag_false_rule_does_not_match(mocker):
-    expected_value = False
-    mocked_app_config_schema = {
-        "premium_features": {
-            "default": False,
-            "rules": {
-                "customer tier equals premium": {
-                    "when_match": True,
-                    "conditions": [
-                        {
-                            "action": RuleAction.EQUALS.value,
-                            "key": "tier",
-                            "value": "premium"
-                        }
-                    ]
-                }
-            }
-        },
-        "tier_feature": {
-            "default": True
-        }
-    }
-
-    # WHEN
-    ctx = {"tier": "basic"}
-    feature_flags = init_feature_flags(mocker=mocker, mock_schema=mocked_app_config_schema)
-    flag = feature_flags.evaluate(name="premium_features", context=ctx, default=False)
-    assert flag == expected_value
-
-
-def test_premium_feature_flag_default_value_no_context(mocker):
-    expected_value = False
-
-    mocked_app_config_schema = {
-        "premium_features": {
-            "default": False,
-            "rules": {
-                "customer tier equals premium": {
-                    "when_match": True,
-                    "conditions": [
-                        {
-                            "action": RuleAction.EQUALS.value,
-                            "key": "tier",
-                            "value": "premium"
-                        }
-                    ]
-                }
-            }
-        },
-        "tier_feature": {
-            "default": True
-        }
-    }
-
-    # WHEN
-    feature_flags = init_feature_flags(mocker=mocker, mock_schema=mocked_app_config_schema)
-    flag = feature_flags.evaluate(name="premium_features", default=False)
-    assert flag == expected_value
+    product_with_discount = app.add_discount(product)
+    assert product_with_discount[0]["discount"] == "20%"

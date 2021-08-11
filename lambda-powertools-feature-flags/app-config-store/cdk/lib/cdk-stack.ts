@@ -40,10 +40,7 @@ export class CdkStack extends cdk.Stack {
                     }
                 }
             },
-            "feature2": {
-                "default": true
-            },
-            "tier_feature": {
+            "discount": {
                 "default": true
             }
         }

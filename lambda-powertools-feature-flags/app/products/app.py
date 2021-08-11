@@ -13,8 +13,7 @@ app = ApiGatewayResolver()
 app_config = AppConfigStore(
     environment="dev-env",
     application="productapp",
-    name="configProfile",
-    max_age=300
+    name="configProfile"
 )
 
 feature_flags = FeatureFlags(store=app_config)
@@ -44,20 +43,24 @@ def get_products(id=None) -> List[Dict]:
         resp_products = list(filter(lambda x: x["productId"] == id, all_products))
     else:
         resp_products = all_products
-    has_premium_features: bool = feature_flags.evaluate(name="premium_features",
-                                                        context=ctx,
-                                                        default=False)
-    resp_products = add_premium_info(resp_products, has_premium_features)
+
+    resp_products = add_discount(resp_products)
     return resp_products
 
 
-def add_premium_info(input_products: List[Dict], has_premium_features) -> List[Dict]:
-    resp = input_products.copy()
+def add_discount(input_products: List[Dict]) -> List[Dict]:
+    discount_flag: bool = feature_flags.evaluate(name="discount", default=False)
+
+    has_premium_features: bool = feature_flags.evaluate(name="premium_features",
+                                                        context=ctx,
+                                                        default=False)
+    discount = {}
+    if discount_flag:
+        discount = {"discount": "10%"}
     if has_premium_features:
-        resp = input_products.copy()
-        for x in resp:
-            x["discount"] = "10%"
-    return resp
+        discount = {"discount": "20%"}
+
+    return [{**x, **discount} for x in input_products]
 
 
 @metrics.log_metrics(capture_cold_start_metric=True)
