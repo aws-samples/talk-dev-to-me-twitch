@@ -58,5 +58,49 @@ For more details check the [documentation](https://awslabs.github.io/aws-lambda-
 
 ## Getting started
 
-### Basic configuration
+
+### AppConfig Store
+
+First you need to deploy the AppConfig feature configuration. You can use the a CloudFormation or the CDK for that. 
+
+```bash
+cd app-config-store/cd
+npm install
+npm run build
+cdk deploy
+```
+
+This will create a feature configuration stored in AppConfig. 
+
+### Application using feature flags
+
+In the `app` directory you will find a simple serverless app, build with AWS SAM, with Amazon API Gateway and AWS Lambda function serving static content under `/products` API.
+See the README for further instruction how to build, test and deploy.
+
+## Feature flags take aways
+
+### Use cases 
+
+* Deploy without feature available to user -> Dark Launch
+* Test featuers on a subset of users or region
+* Collect data and metrics in production
+* disable non essential parts in cirtical situations (automate it!)
+
+### Challenges
+
+* keep the complexity and the number of features low
+* document features for humans
+* establish mechanism for schema evolution
+* test rules and conditions before deployment
+
+### Best practices
+
+* similar to other cross cutting concerns, try to standardise to reduce cognitive load
+* start small when introducing feature toggles
+* keep toggle scope and complexity low
+* clean up regulary and stive to keep the number of toggles low
+* promote features flags to code after some time
+* reduce the number of toggle points within the code base
+* establish sane defaults for a fallback mechanism
+* document for humans
 
