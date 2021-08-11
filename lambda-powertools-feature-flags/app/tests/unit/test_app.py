@@ -47,6 +47,7 @@ def test_app_adds_discount_for_all_users(mocker):
     product_with_discount = app.add_discount(product)
     assert product_with_discount[0]["discount"] == "10%"
 
+
 def test_app_adds_discount_for_premium_users(mocker):
     product = [{"productId": "1", "name": "Mechanical Keyboard 9000", "price": 3549}]
     mocked_app_config_schema = {
