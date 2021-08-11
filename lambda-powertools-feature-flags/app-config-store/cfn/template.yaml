@@ -1,0 +1,60 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template
+Resources:
+  FeatureStoreApp:
+    Type: AWS::AppConfig::Application
+    Properties:
+      Description: "AppConfig Appliction for feature toggles"
+      Name: my-app
+
+  FeatureStoreDevEnv:
+    Type: AWS::AppConfig::Environment
+    Properties:
+      ApplicationId: !Ref FeatureStoreApp
+      Description: "Development Environment for the App Config Store"
+      Name: "development"
+
+  FeatureStoreConfigProfile:
+    Type: AWS::AppConfig::ConfigurationProfile
+    Properties:
+      ApplicationId: !Ref FeatureStoreApp
+      Name: "MyTestProfile"
+      LocationUri: "hosted"
+
+  HostedConfigVersion:
+    Type: AWS::AppConfig::HostedConfigurationVersion
+    Properties:
+      ApplicationId: !Ref FeatureStoreApp
+      ConfigurationProfileId: !Ref FeatureStoreConfigProfile
+      Description: 'A sample hosted configuration version'
+      Content: |
+        {
+              "premium_features": {
+                "default": false,
+                "rules": {
+                  "customer tier equals premium": {
+                    "when_match": true,
+                    "conditions": [
+                      {
+                        "action": "EQUALS",
+                        "key": "tier",
+                        "value": "premium"
+                      }
+                    ]
+                  }
+                }
+              },
+              "feature2": {
+                "default": true
+              }
+          }
+      ContentType: 'application/json'
+
+  ConfigDeployment:
+    Type: AWS::AppConfig::Deployment
+    Properties:
+      ApplicationId: !Ref FeatureStoreApp
+      ConfigurationProfileId: !Ref FeatureStoreConfigProfile
+      ConfigurationVersion: !Ref HostedConfigVersion
+      DeploymentStrategyId: "AppConfig.AllAtOnce"
+      EnvironmentId: !Ref FeatureStoreDevEnv

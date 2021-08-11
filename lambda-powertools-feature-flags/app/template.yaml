@@ -1,0 +1,73 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  app
+
+Globals:
+  Api:
+    EndpointConfiguration: REGIONAL
+    TracingEnabled: true
+    Cors:
+      AllowOrigin: "'*'"  # Dev only
+      AllowHeaders: "'Content-Type,Authorization,X-Amz-Date'"
+      MaxAge: "'300'"
+    BinaryMediaTypes: # https://awslabs.github.io/aws-lambda-powertools-python/latest/core/event_handler/api_gateway/#binary-responses
+      - '*~1*'  # converts to */* for any binary type
+  Function:
+    Timeout: 5
+    MemorySize: 256
+    Runtime: python3.8
+    Tracing: Active # https://docs.aws.amazon.com/lambda/latest/dg/lambda-x-ray.html
+    Environment:
+      Variables:
+        # Powertools env vars: https://awslabs.github.io/aws-lambda-powertools-python/#environment-variables
+        LOG_LEVEL: INFO
+        POWERTOOLS_LOGGER_SAMPLE_RATE: 0.1
+        POWERTOOLS_LOGGER_LOG_EVENT: true
+        POWERTOOLS_METRICS_NAMESPACE: MyServerlessApplication
+        POWERTOOLS_SERVICE_NAME: product
+
+Resources:
+  ProductsFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html
+    Properties:
+      Handler: app.lambda_handler
+      CodeUri: products
+      Description: Function to return products
+      Events:
+        ProductsPath:
+          Type: Api # More info about API Event Source: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-function-api.html
+          Properties:
+            Path: /products
+            Method: GET
+        ProductsById:
+          Type: Api
+          Properties:
+            Path: /products/{id}
+            Method: GET
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            Effect: "Allow"
+            Action: "appConfig:GetConfiguration"
+            Resource: "*"
+      Environment:
+        Variables:
+          PARAM1: VALUE
+      Tags:
+        LambdaPowertools: python
+
+
+
+Outputs:
+  ProductsApigwURL:
+    Description: "API Gateway endpoint URL for Prod environment for Hello World Function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod"
+    Export:
+      Name: ApiURL
+
+  ProductsFunction:
+    Description: "Products Lambda Function ARN"
+    Value: !GetAtt ProductsFunction.Arn
+
+
