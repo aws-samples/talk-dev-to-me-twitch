@@ -1,0 +1,26 @@
+{
+  "name": "infrastructure",
+  "version": "0.1.0",
+  "bin": {
+    "infrastructure": "bin/infrastructure.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.119.0",
+    "aws-cdk": "1.119.0",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-events": "^1.128.0",
+    "@aws-cdk/aws-events-targets": "^1.128.0",
+    "@aws-cdk/aws-iam": "^1.128.0",
+    "@aws-cdk/aws-lambda": "^1.128.0",
+    "@aws-cdk/aws-s3-assets": "^1.128.0",
+    "@aws-cdk/core": "1.119.0",
+    "esbuild": "^0.13.8"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vacationtracker-dev-225120-authRole",
+      "UnauthRoleArn": "arn:aws:iam::414275540131:role/amplify-vacationtracker-dev-225120-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::414275540131:role/amplify-vacationtracker-dev-225120-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-vacationtracker-dev-225120-deployment",
+      "UnauthRoleName": "amplify-vacationtracker-dev-225120-unauthRole",
+      "StackName": "amplify-vacationtracker-dev-225120",
+      "StackId": "arn:aws:cloudformation:eu-west-1:414275540131:stack/amplify-vacationtracker-dev-225120/0f148800-1fdd-11ec-8d94-0a397a0898a1",
+      "AmplifyAppId": "d1lhx9dm0heri0"
+    },
+    "categories": {
+      "auth": {
+        "vacationtrackerd86ca2cd": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1lhx9dm0heri0",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+type VacationRequest
+  @model(
+    mutations: {
+      delete: "deleteVacationRequest"
+    }
+  )
+  @auth(
+    rules: [
+      {
+        allow: groups
+        groups: ["Approvers"]
+        queries: [get, list]
+        mutations: [create, update]
+      },
+      { allow: owner },
+      {
+        allow: private
+        provider: iam
+        operations: [create, delete, read, update]
+      },
+      { allow: private, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  category: Category!
+  description: String
+  approvalStatus: ApprovalStatus!
+  startDate: AWSDate!
+  endDate: AWSDate!
+  approvedBy: String
+  owner: String
+  rejectionReason: String
+}
+
+enum Category {
+  ANNUAL_LEAVE
+  PUBLIC_HOLIDAYS
+  SICK_LEAVE
+  PATERNITY_LEAVE
+  ADOPTIVE_LEAVE
+  CARERS_LEAVE
+  PARENTAL_LEAVE
+}
+
+enum ApprovalStatus {
+  PENDING_VALIDATION
+  PENDING_APPROVAL
+  REJECTED_BY_SYSTEM
+  APPROVED
+  DENIED
+}
+
+input CreateVacationRequestInput {
+  category: Category
+  description: String
+  approvalStatus: ApprovalStatus
+  startDate: AWSDate
+  endDate: AWSDate
+  approvedBy: String
+}
+
+input UpdateVacationRequestInput {
+  id: ID!
+  category: Category
+  description: String
+  approvalStatus: ApprovalStatus
+  startDate: AWSDate
+  endDate: AWSDate
+  approvedBy: String
+  owner: String
+  rejectionReason: String
+}
+
+type Mutation {
+  submitVacationRequest(input: CreateVacationRequestInput!): VacationRequest
+    @function(name: "createVacationRequestFunction") @aws_iam @aws_cognito_user_pools
+  updateVacationRequest(input: UpdateVacationRequestInput!): VacationRequest
+    @function(name: "updateVacationRequestFunction") @aws_iam @aws_cognito_user_pools
+  
+}
+
+type Subscription {
+  onVacationRequestNotification(owner: String): VacationRequest
+    @aws_subscribe(mutations: ["updateVacationRequest"])
+    @aws_iam
+    @aws_cognito_user_pools
+}
+
