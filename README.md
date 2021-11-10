@@ -11,6 +11,7 @@ Don't miss the next episode and make sure to star or watch the repo or follow us
 - Micro-frontends with Module Federation with [Luca Mezzalira](https://twitter.com/lucamezzalira), [recording](https://www.twitch.tv/videos/1100875700), [code](https://github.com/aws-samples/talk-dev-to-me-twitch/tree/main/micro-frontends-module-federation)
 - Feature Flags with AWS Lambda Powertools with [Ran Isenberg](https://twitter.com/IsenbergRan), [recording](https://www.twitch.tv/videos/1115051083), [code](https://github.com/aws-samples/talk-dev-to-me-twitch/tree/main/lambda-powertools-feature-flags)
 - Event-driven architectures - A developer's tale, [recording](https://www.twitch.tv/videos/1175596314), [code](https://github.com/aws-samples/talk-dev-to-me-twitch/tree/main/event-driven-developers-tale)
+- Rust on Serverless with [Nicolas Moutschen](https://twitter.com/NMoutschen), [recording](https://www.twitch.tv/videos/1201473601), [code](https://github.com/aws-samples/serverless-rust-demo)
 
 ## License
 
