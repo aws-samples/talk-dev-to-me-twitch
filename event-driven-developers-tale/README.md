@@ -184,7 +184,7 @@ During the episode we showed a user submiting a new vacation request and a manag
 
 > Please be aware that features might not be exactly the same as both the code sample and the result from the event storming session are not final.
 
-![SubmitVacationRequestFlow](/images/submitVacationRequestFlow.png)
+![SubmitVacationRequestFlow](images/submitVacationRequestFlow.png)
 
 ### Technologies used
 
