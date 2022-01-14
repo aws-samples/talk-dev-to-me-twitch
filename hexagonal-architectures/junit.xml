@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="9.589">
+  <testsuite name="product_domain" errors="0" failures="0" skipped="0" timestamp="2022-01-06T23:04:00" time="2.651" tests="3">
+    <testcase classname="product_domain get_product should return product with same id when exists" name="product_domain get_product should return product with same id when exists" time="0.019">
+    </testcase>
+    <testcase classname="product_domain get_product should return empty if id does not exist" name="product_domain get_product should return empty if id does not exist" time="0.003">
+    </testcase>
+    <testcase classname="product_domain get_product should throw if store fails to get product" name="product_domain get_product should throw if store fails to get product" time="0.022">
+    </testcase>
+  </testsuite>
+</testsuites>

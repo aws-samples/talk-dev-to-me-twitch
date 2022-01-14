@@ -1,0 +1,137 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+  Function:
+    MemorySize: 128
+    Timeout: 5
+    Runtime: nodejs14.x
+    Architectures:
+      - x86_64
+    Tracing: Active
+    Environment:
+      Variables:
+        TABLE: !Ref Table
+
+Resources:
+  GetProductFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/functions/get-product
+      Handler: get-product.handler
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /product/{id}
+            Method: GET
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action: dynamodb:GetItem
+              Resource: !GetAtt Table.Arn
+
+  GetProductsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/functions/get-products
+      Handler: get-products.handler
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /product
+            Method: GET
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action: dynamodb:Scan
+              Resource: !GetAtt Table.Arn
+
+  DeleteProductFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/functions/delete-product
+      Handler: delete-product.handler
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /product/{id}
+            Method: DELETE
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action: dynamodb:DeleteItem
+              Resource: !GetAtt Table.Arn
+
+  PutProductFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/functions/put-product
+      Handler: put-product.handler
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /product
+            Method: PUT
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action: dynamodb:PutItem
+              Resource: !GetAtt Table.Arn
+
+  Table:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      BillingMode: PAY_PER_REQUEST
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+
+  # EventBus:
+  #   Type: AWS::Events::EventBus
+  #   Properties:
+  #     Name: serverless-demo-event-bus
+
+  # EventRule: 
+  #   Type: AWS::Events::Rule
+  #   Properties: 
+  #     Description: "Serverless demo event rule"
+  #     EventBusName: "serverless-demo-event-bus"
+  #     EventPattern: 
+  #       source: 
+  #         - "serverless.demo"
+  #       detail: 
+  #         state: 
+  #           - "ProductCreationRequested"
+  #     State: "ENABLED"
+  #     Targets: 
+  #       - 
+  #         Arn: 
+  #           Fn::GetAtt: 
+  #             - "PutProductFunction"
+  #             - "Arn"
+  #         Id: "CreateProductServiceTarget"
+
+  # PermissionForEventsToInvokeLambda: 
+  #   Type: AWS::Lambda::Permission
+  #   Properties: 
+  #     FunctionName: 
+  #       Ref: "PutProductFunction"
+  #     Action: "lambda:InvokeFunction"
+  #     Principal: "events.amazonaws.com"
+  #     SourceArn: 
+  #       Fn::GetAtt: 
+  #         - "EventRule"
+  #         - "Arn"
+
+
