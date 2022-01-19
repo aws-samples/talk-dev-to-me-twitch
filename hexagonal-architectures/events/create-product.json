@@ -1,5 +1,5 @@
 {
-  "body": "{\"id\":\"100\",\"name\":\"product 100\",\"price\":100.20}",
+  "body": "{\"id\":\"cdc73f9d-aea9-11e3-9d5a-835b769c0d9c\",\"name\":\"product cdc73f9d-aea9-11e3-9d5a-835b769c0d9c\",\"price\":100.20}",
   "resource": "/{proxy+}",
   "path": "/product",
   "httpMethod": "PUT",

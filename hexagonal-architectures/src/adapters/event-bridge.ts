@@ -13,7 +13,6 @@ export const CreateProductEBAdapter = (next: CreateProduct): EventBridgeHandler<
         
         if (event["detail-type"] === ProductEventTypes.CreationRequested) {
 
-            console.log(`Product Payload: ${JSON.stringify(event.detail)}`);
             const product = new Product(event.detail);
 
             try {
