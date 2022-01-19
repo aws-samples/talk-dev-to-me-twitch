@@ -1,13 +1,13 @@
 # Serverless Typescript Demo
 
-This is a simple serverless application built in Typescript and uses Node.js runtime. It consists of an [Amazon API Gateway](https://aws.amazon.com/api-gateway/) backed by four [AWS Lambda](https://aws.amazon.com/lambda/)
-functions and an [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) table for storage.
+This is a simple serverless application built in Typescript and uses Node.js runtime. It consists of an [Amazon API Gateway](https://aws.amazon.com/api-gateway/) backed by four [AWS Lambda](https://aws.amazon.com/lambda/) functions and an [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) table for storage.
 
 <p align="center">
   <img src="images/diagram.png" alt="Architecture diagram"/>
 </p>
 
-We will explore the usage of [hexagonal architecture](https://www.youtube.com/watch?v=kRFg6fkVChQ) pattern to decouple the entry points, from the main domain logic and the storage logic. As an example we will see how to have multiple adapters and easily switch between them.
+We will explore the usage of [hexagonal architecture](https://www.youtube.com/watch?v=kRFg6fkVChQ) pattern to decouple the entry points, from the main domain logic and the storage logic. 
+As an example we will see how to implement an adapter for Amazon API Gateway and another adapter for Amazon EventBridge and how to easily switch between them with minor code changes.
 
 ![hexagonal architecture diagram](images/hex.png)
 
