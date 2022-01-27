@@ -9,7 +9,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@heroicons/react": "^1.0.5",
-    "@mui/material": "^5.0.3",
+    "@mui/material": "^5.3.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^12.8.3",
