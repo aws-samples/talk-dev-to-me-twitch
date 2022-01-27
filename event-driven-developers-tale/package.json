@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^1.2.18",
-    "@aws-sdk/client-dynamodb": "^3.35.0",
+    "@aws-sdk/client-dynamodb": "^3.48.0",
     "@craco/craco": "^6.3.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.6.0",
