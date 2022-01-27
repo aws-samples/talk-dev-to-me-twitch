@@ -7,8 +7,56 @@ updates:
   #  schedule:
   #    interval: "weekly"
 
-  # Maintain dependencies for npm
+  # Maintain dependencies for event-driven-developers-tale
   - package-ecosystem: "npm"
     directory: "/event-driven-developers-tale/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for hexagonal-architectures
+  - package-ecosystem: "npm"
+    directory: "/hexagonal-architectures/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for micro-frontends-module-federation/accountdetails
+  - package-ecosystem: "npm"
+    directory: "/micro-frontends-module-federation/accountdetails/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for micro-frontends-module-federation/appshell
+  - package-ecosystem: "npm"
+    directory: "/micro-frontends-module-federation/appshell/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for micro-frontends-module-federation/catalogue
+  - package-ecosystem: "npm"
+    directory: "/micro-frontends-module-federation/catalogue/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for micro-frontends-module-federation/myaccount
+  - package-ecosystem: "npm"
+    directory: "/micro-frontends-module-federation/myaccount/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for micro-frontends-module-federation/paymentdetails
+  - package-ecosystem: "npm"
+    directory: "/micro-frontends-module-federation/paymentdetails/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for micro-frontends-module-federation/signin
+  - package-ecosystem: "npm"
+    directory: "/micro-frontends-module-federation/signin/"
+    schedule:
+      interval: "daily"
+      
+  # Maintain dependencies for lambda-powertools-feature-flags
+  - package-ecosystem: "python"
+    directory: "/lambda-powertools-feature-flags/app/"
     schedule:
       interval: "daily"
