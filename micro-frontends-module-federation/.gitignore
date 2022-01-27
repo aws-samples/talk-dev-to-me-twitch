@@ -1,0 +1,17 @@
+accountdetails/dist/
+accountdetails/node_modules
+
+appshell/dist/
+appshell/node_modules
+
+catalogue/dist/
+catalogue/node_modules
+
+myaccount/dist/
+myaccount/node_modules
+
+paymentdetails/dist/
+paymentdetails/node_modules
+
+signin/dist/
+signin/node_modules

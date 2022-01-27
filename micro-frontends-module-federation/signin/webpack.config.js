@@ -5,7 +5,9 @@ module.exports = {
     entry: "./src/SignIn",
     mode: "development",
     devServer: {
-      contentBase: path.join(__dirname, "dist"),
+      static: {
+        directory: path.join(__dirname, "dist"),
+      },
       port: 3003,
     },
     output: {
