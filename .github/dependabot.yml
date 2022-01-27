@@ -9,6 +9,6 @@ updates:
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
-    directory: "/*"
+    directory: "/event-driven-developers-tale/"
     schedule:
       interval: "daily"
