@@ -56,7 +56,7 @@ updates:
       interval: "daily"
       
   # Maintain dependencies for lambda-powertools-feature-flags
-  - package-ecosystem: "python"
+  - package-ecosystem: "pip"
     directory: "/lambda-powertools-feature-flags/app/"
     schedule:
       interval: "daily"
