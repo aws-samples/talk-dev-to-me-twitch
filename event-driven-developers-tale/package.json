@@ -5,7 +5,6 @@
   "dependencies": {
     "@aws-amplify/ui-react": "^1.2.18",
     "@aws-sdk/client-dynamodb": "^3.48.0",
-    "@craco/craco": "^6.4.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@heroicons/react": "^1.0.5",
@@ -23,14 +22,14 @@
     "react-dom": "^17.0.2",
     "react-moment": "^1.1.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.0",
     "react-uuid": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -52,8 +51,8 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "postcss": "^8.2.13",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.17"
   }
 }
