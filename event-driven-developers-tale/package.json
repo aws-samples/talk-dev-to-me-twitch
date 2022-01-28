@@ -14,7 +14,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aws-amplify": "^4.3.13",
-    "aws-sdk": "^2.1064.0",
+    "aws-sdk": "^2.1065.0",
     "aws-xray-sdk": "^3.3.4",
     "hello_world": "file:functions/createVacationRequest",
     "moment": "^2.29.1",
