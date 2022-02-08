@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, useParams} from "react-router-dom";
 
-const Home = () => {
+const Details = () => {
 
     const {productId} = useParams()
 
@@ -14,4 +14,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Details;
