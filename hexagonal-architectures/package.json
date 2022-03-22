@@ -25,7 +25,7 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.54.1",
+    "@aws-sdk/client-dynamodb": "^3.55.0",
     "@aws-sdk/lib-dynamodb": "^3.54.1",
     "aws-sdk": "^2.1096.0",
     "prettier": "^2.6.0",
