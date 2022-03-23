@@ -24,7 +24,7 @@
         "@babel/core": "^7.17.8",
         "@babel/preset-react": "^7.13.13",
         "atriom-plugin": "^1.1.2",
-        "babel-loader": "^8.2.3",
+        "babel-loader": "^8.2.4",
         "html-webpack-plugin": "^5.3.1",
         "serve": "^13.0.2",
         "webpack": "^5.70.0",
