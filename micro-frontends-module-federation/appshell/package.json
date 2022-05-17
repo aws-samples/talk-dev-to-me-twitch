@@ -22,7 +22,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.17.12",
-        "@babel/preset-react": "^7.13.13",
+        "@babel/preset-react": "^7.17.12",
         "atriom-plugin": "^1.1.2",
         "babel-loader": "^8.2.5",
         "html-webpack-plugin": "^5.3.1",
