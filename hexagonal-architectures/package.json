@@ -27,7 +27,7 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.109.0",
     "@aws-sdk/lib-dynamodb": "^3.109.0",
-    "aws-sdk": "^2.1153.0",
+    "aws-sdk": "^2.1154.0",
     "prettier": "^2.7.0",
     "source-map-support": "^0.5.21",
     "ts-json-object": "^0.2.10",
