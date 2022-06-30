@@ -2,10 +2,10 @@ version: 2
 updates:
 
   # Maintain dependencies for GitHub Actions
-  #- package-ecosystem: "github-actions"
-  #  directory: "/"
-  #  schedule:
-  #    interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
 
   # Maintain dependencies for event-driven-developers-tale
   - package-ecosystem: "npm"
