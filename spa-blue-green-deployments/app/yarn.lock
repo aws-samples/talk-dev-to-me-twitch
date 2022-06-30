@@ -3497,8 +3497,8 @@ flatted@^3.1.0, flatted@^3.2.5:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.2.5.tgz"
 
 follow-redirects@^1.0.0:
-  version "1.14.5"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.5.tgz"
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
 
 forever-agent@~0.6.1:
   version "0.6.1"
