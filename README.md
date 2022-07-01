@@ -15,6 +15,8 @@ Don't miss the next episode and make sure to star or watch the repo or follow us
 - Hexagonal Architectures with [Tiago Barbosa](https://twitter.com/t1agob), [recording](https://www.twitch.tv/videos/1269759099), [code](https://github.com/aws-samples/talk-dev-to-me-twitch/tree/main/hexagonal-architectures)
 - SPA blue/green deployments with [Lucian Revnic](https://twitter.com/lrevnic), [recording](https://www.twitch.tv/videos/1448076579), [code](https://github.com/aws-samples/talk-dev-to-me-twitch/tree/main/spa-blue-green-deployments)
 - Site Reliability Engineering at adidas with Andreia Otto, [recording](https://www.twitch.tv/aws/video/1454783756)
+- Start building apps with AWS SAM [Luca Mezzalira](https://twitter.com/lucamezzalira), [recording](https://www.twitch.tv/videos/1510994432)
+- Golang ❤️ Serverless [Simon Thulbourn](https://twitter.com/sthulb), [recording](https://www.twitch.tv/videos/1519229030), [code]()
 
 ## License
 
