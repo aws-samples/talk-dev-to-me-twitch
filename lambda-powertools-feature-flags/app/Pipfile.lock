@@ -18,11 +18,11 @@
     "default": {
         "aws-lambda-powertools": {
             "hashes": [
-                "sha256:72379e74236cd3197759a9ce4d36054189a68f9575bdb6241f420cc2aada54e7",
-                "sha256:8a1608e270d5ace289e53c2c407f580f9c4a8d494ca4a87ce26e732e6c68076f"
+                "sha256:6eea22e4f0ec7cf8c513ce55fe4afa49a5ce481d84c2bdeec445c3512a8e292b",
+                "sha256:d4a1a56b54dc2bc346743a4d8887d33b04c0b95de414e0406a5f751264f2fb36"
             ],
             "index": "pypi",
-            "version": "==1.26.6"
+            "version": "==1.26.7"
         },
         "aws-xray-sdk": {
             "hashes": [
@@ -91,7 +91,7 @@
                 "sha256:c33ccba33c819596124764c23a97d25f32b28433ba0dedeb77d873a38722c9bc",
                 "sha256:ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'",
             "version": "==1.26.11"
         },
         "wrapt": {
@@ -372,7 +372,7 @@
                 "sha256:c33ccba33c819596124764c23a97d25f32b28433ba0dedeb77d873a38722c9bc",
                 "sha256:ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'",
             "version": "==1.26.11"
         }
     }
