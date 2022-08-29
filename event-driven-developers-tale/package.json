@@ -7,7 +7,7 @@
     "@aws-sdk/client-dynamodb": "^3.118.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@heroicons/react": "^1.0.6",
+    "@heroicons/react": "^2.0.8",
     "@mui/material": "^5.8.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
