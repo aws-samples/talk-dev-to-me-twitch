@@ -33,19 +33,18 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:59e9c39c867b5fd0575a50d8fafdf72c823c5510254a8615dff24f1584408121",
-                "sha256:c1d4e5d73d7720402c6538965efd6df5807492db8a71f30221dc11355d06db05"
+                "sha256:bcc579e801774cb2c7dda87ff985feda1ae7e10591d11ef37526363139138bd4"
             ],
             "index": "pypi",
-            "version": "==1.24.86"
+            "version": "==1.24.87"
         },
         "botocore": {
             "hashes": [
-                "sha256:830359c8bf22f2a386431825060ff9666519c032f2ccd4a69f1a702f7195f6c0",
-                "sha256:dcfe1825b84d17cf11653f8bb4bc77c2f172dcec1dc68eee932d68e5e6ed89d5"
+                "sha256:216de9751116d0d1cc3901e26d95a5c9a30ecb6973ae6147af1cf504858d845a",
+                "sha256:c4cbd22056ace4c7aa99e62e8ae629865ab80cc8bbf7c6d68ccf0f768f0034b6"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.27.86"
+            "version": "==1.27.87"
         },
         "fastjsonschema": {
             "hashes": [
@@ -176,19 +175,18 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:59e9c39c867b5fd0575a50d8fafdf72c823c5510254a8615dff24f1584408121",
-                "sha256:c1d4e5d73d7720402c6538965efd6df5807492db8a71f30221dc11355d06db05"
+                "sha256:bcc579e801774cb2c7dda87ff985feda1ae7e10591d11ef37526363139138bd4"
             ],
             "index": "pypi",
-            "version": "==1.24.86"
+            "version": "==1.24.87"
         },
         "botocore": {
             "hashes": [
-                "sha256:830359c8bf22f2a386431825060ff9666519c032f2ccd4a69f1a702f7195f6c0",
-                "sha256:dcfe1825b84d17cf11653f8bb4bc77c2f172dcec1dc68eee932d68e5e6ed89d5"
+                "sha256:216de9751116d0d1cc3901e26d95a5c9a30ecb6973ae6147af1cf504858d845a",
+                "sha256:c4cbd22056ace4c7aa99e62e8ae629865ab80cc8bbf7c6d68ccf0f768f0034b6"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.27.86"
+            "version": "==1.27.87"
         },
         "certifi": {
             "hashes": [
