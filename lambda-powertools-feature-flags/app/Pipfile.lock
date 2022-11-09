@@ -33,19 +33,19 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:3b0fa19390895e664045713f2e47e63ad29c9f98b7bee6836dec7124953e48b8",
-                "sha256:9feb98e045736f943c2099d955415cfe44133e03d8e2d7581d2e5dc74d0ed064"
+                "sha256:7b6fb7b0346c239b53ad5e5fdf5eeef3c6452186d91239beeb66f106531cb2c3",
+                "sha256:cb4eca34b6e13e4ead46a68f66759feaae6bf5e97362b2c979b7b9f1d203715e"
             ],
             "index": "pypi",
-            "version": "==1.26.1"
+            "version": "==1.26.5"
         },
         "botocore": {
             "hashes": [
-                "sha256:75c65130ffab527d0a3d948c6d87eb8eac210e079e1ff2768c66484be57bb77c",
-                "sha256:e38b7cdce927cefabe45608dde61660b76458fba6624240dcdb6c4b8453d17f7"
+                "sha256:8a1a074bce7567576947869d41026c45d507e00885f3890c1719180a9400ec40",
+                "sha256:94e820994e731568d191373d622507fee6067c9e68b5a121aed46322fd6d3d45"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.29.1"
+            "version": "==1.29.5"
         },
         "fastjsonschema": {
             "hashes": [
@@ -91,7 +91,7 @@
                 "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e",
                 "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_full_version < '4.0.0'",
             "version": "==1.26.12"
         },
         "wrapt": {
@@ -176,19 +176,19 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:3b0fa19390895e664045713f2e47e63ad29c9f98b7bee6836dec7124953e48b8",
-                "sha256:9feb98e045736f943c2099d955415cfe44133e03d8e2d7581d2e5dc74d0ed064"
+                "sha256:7b6fb7b0346c239b53ad5e5fdf5eeef3c6452186d91239beeb66f106531cb2c3",
+                "sha256:cb4eca34b6e13e4ead46a68f66759feaae6bf5e97362b2c979b7b9f1d203715e"
             ],
             "index": "pypi",
-            "version": "==1.26.1"
+            "version": "==1.26.5"
         },
         "botocore": {
             "hashes": [
-                "sha256:75c65130ffab527d0a3d948c6d87eb8eac210e079e1ff2768c66484be57bb77c",
-                "sha256:e38b7cdce927cefabe45608dde61660b76458fba6624240dcdb6c4b8453d17f7"
+                "sha256:8a1a074bce7567576947869d41026c45d507e00885f3890c1719180a9400ec40",
+                "sha256:94e820994e731568d191373d622507fee6067c9e68b5a121aed46322fd6d3d45"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.29.1"
+            "version": "==1.29.5"
         },
         "certifi": {
             "hashes": [
@@ -267,11 +267,11 @@
         },
         "exceptiongroup": {
             "hashes": [
-                "sha256:2ac84b496be68464a2da60da518af3785fff8b7ec0d090a581604bc870bdee41",
-                "sha256:affbabf13fb6e98988c38d9c5650e701569fe3c1de3233cfb61c5f33774690ad"
+                "sha256:4d6c0aa6dd825810941c792f53d7b8d71da26f5e5f84f20f9508e8f2d33b140a",
+                "sha256:73866f7f842ede6cb1daa42c4af078e2035e5f7607f0e2c762cc51bb31bbe7b2"
             ],
             "markers": "python_version < '3.11'",
-            "version": "==1.0.0"
+            "version": "==1.0.1"
         },
         "idna": {
             "hashes": [
@@ -381,7 +381,7 @@
                 "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e",
                 "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_full_version < '4.0.0'",
             "version": "==1.26.12"
         }
     }
