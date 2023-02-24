@@ -26,19 +26,19 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:17f0d782487275cac12676a61b3f1a4900954cc454c842b8551ca47a3dcd59b4",
-                "sha256:bf808f7433629650128ab577a9d4a0f4daf072d9f2f3a907b9d567a6952d9154"
+                "sha256:0c593017fa49dbc34dcdbd5659208f2daf293a499d5f4d7e61978cd6b5d72a97",
+                "sha256:488bf63d65864ab7fcdf9337c5aa4d825d444e253738a60f80789916bacc47dc"
             ],
             "index": "pypi",
-            "version": "==1.26.77"
+            "version": "==1.26.78"
         },
         "botocore": {
             "hashes": [
-                "sha256:9d94a02f2584b52c65fb3cb309fb1b29d6d0c36d69062722b0275c1c382c44c9",
-                "sha256:d8aa7bffe2422de282b2d02945b7b45d5fecf00f67b65eebb0b1fa3de1abc6d0"
+                "sha256:2bee6ed037590ef1e4884d944486232871513915f12a8590c63e3bb6046479bf",
+                "sha256:656ac8822a1b6c887a8efe1172bcefa9c9c450face26dc39998a249e8c340a23"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.29.77"
+            "version": "==1.29.78"
         },
         "jmespath": {
             "hashes": [
@@ -100,19 +100,19 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:17f0d782487275cac12676a61b3f1a4900954cc454c842b8551ca47a3dcd59b4",
-                "sha256:bf808f7433629650128ab577a9d4a0f4daf072d9f2f3a907b9d567a6952d9154"
+                "sha256:0c593017fa49dbc34dcdbd5659208f2daf293a499d5f4d7e61978cd6b5d72a97",
+                "sha256:488bf63d65864ab7fcdf9337c5aa4d825d444e253738a60f80789916bacc47dc"
             ],
             "index": "pypi",
-            "version": "==1.26.77"
+            "version": "==1.26.78"
         },
         "botocore": {
             "hashes": [
-                "sha256:9d94a02f2584b52c65fb3cb309fb1b29d6d0c36d69062722b0275c1c382c44c9",
-                "sha256:d8aa7bffe2422de282b2d02945b7b45d5fecf00f67b65eebb0b1fa3de1abc6d0"
+                "sha256:2bee6ed037590ef1e4884d944486232871513915f12a8590c63e3bb6046479bf",
+                "sha256:656ac8822a1b6c887a8efe1172bcefa9c9c450face26dc39998a249e8c340a23"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.29.77"
+            "version": "==1.29.78"
         },
         "certifi": {
             "hashes": [
