@@ -20,14 +20,21 @@
     "@angular-devkit/core" "14.2.10"
     rxjs "6.6.7"
 
-"@angular-devkit/build-angular@14.2.10":
-  version "14.2.10"
-  resolved "https://registry.npmjs.org/@angular-devkit/build-angular/-/build-angular-14.2.10.tgz"
+"@angular-devkit/architect@0.1402.11":
+  version "0.1402.11"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1402.11.tgz#53d12c2433a4bad0b863028e0e3b38e5540f3739"
+  dependencies:
+    "@angular-devkit/core" "14.2.11"
+    rxjs "6.6.7"
+
+"@angular-devkit/build-angular@14.2.11":
+  version "14.2.11"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-14.2.11.tgz#168c3606949cd9439cfbcba7302d77641905c7a3"
   dependencies:
     "@ampproject/remapping" "2.2.0"
-    "@angular-devkit/architect" "0.1402.10"
-    "@angular-devkit/build-webpack" "0.1402.10"
-    "@angular-devkit/core" "14.2.10"
+    "@angular-devkit/architect" "0.1402.11"
+    "@angular-devkit/build-webpack" "0.1402.11"
+    "@angular-devkit/core" "14.2.11"
     "@babel/core" "7.18.10"
     "@babel/generator" "7.18.12"
     "@babel/helper-annotate-as-pure" "7.18.6"
@@ -38,7 +45,7 @@
     "@babel/runtime" "7.18.9"
     "@babel/template" "7.18.10"
     "@discoveryjs/json-ext" "0.5.7"
-    "@ngtools/webpack" "14.2.10"
+    "@ngtools/webpack" "14.2.11"
     ansi-colors "4.1.3"
     babel-loader "8.2.5"
     babel-plugin-istanbul "6.1.1"
@@ -81,7 +88,7 @@
     text-table "0.2.0"
     tree-kill "1.2.2"
     tslib "2.4.0"
-    webpack "5.74.0"
+    webpack "5.76.1"
     webpack-dev-middleware "5.3.3"
     webpack-dev-server "4.11.0"
     webpack-merge "5.8.0"
@@ -89,16 +96,26 @@
   optionalDependencies:
     esbuild "0.15.5"
 
-"@angular-devkit/build-webpack@0.1402.10":
-  version "0.1402.10"
-  resolved "https://registry.npmjs.org/@angular-devkit/build-webpack/-/build-webpack-0.1402.10.tgz"
+"@angular-devkit/build-webpack@0.1402.11":
+  version "0.1402.11"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-webpack/-/build-webpack-0.1402.11.tgz#293802727ee747fc47b6965a12befad012a1b721"
   dependencies:
-    "@angular-devkit/architect" "0.1402.10"
+    "@angular-devkit/architect" "0.1402.11"
     rxjs "6.6.7"
 
 "@angular-devkit/core@14.2.10":
   version "14.2.10"
   resolved "https://registry.npmjs.org/@angular-devkit/core/-/core-14.2.10.tgz"
+  dependencies:
+    ajv "8.11.0"
+    ajv-formats "2.1.1"
+    jsonc-parser "3.1.0"
+    rxjs "6.6.7"
+    source-map "0.7.4"
+
+"@angular-devkit/core@14.2.11":
+  version "14.2.11"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-14.2.11.tgz#a92397c1b4c04c2a710b9de9b53eecc78d7db6b3"
   dependencies:
     ajv "8.11.0"
     ajv-formats "2.1.1"
@@ -298,7 +315,7 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
-"@babel/generator@7.18.12", "@babel/generator@^7.18.10":
+"@babel/generator@7.18.12":
   version "7.18.12"
   resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.18.12.tgz"
   dependencies:
@@ -306,7 +323,7 @@
     "@jridgewell/gen-mapping" "^0.3.2"
     jsesc "^2.5.1"
 
-"@babel/generator@^7.20.5":
+"@babel/generator@^7.18.10", "@babel/generator@^7.20.5":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.20.5.tgz"
   dependencies:
@@ -1285,9 +1302,9 @@
   version "2.0.4"
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
 
-"@ngtools/webpack@14.2.10":
-  version "14.2.10"
-  resolved "https://registry.npmjs.org/@ngtools/webpack/-/webpack-14.2.10.tgz"
+"@ngtools/webpack@14.2.11":
+  version "14.2.11"
+  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-14.2.11.tgz#f1266221de67e6e81399fc6fd040128b621ce74b"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4555,7 +4572,7 @@ minimalistic-assert@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz"
 
-minimatch@3.0.5, minimatch@^3.0.4:
+minimatch@3.0.5:
   version "3.0.5"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.0.5.tgz"
   dependencies:
@@ -4567,7 +4584,7 @@ minimatch@5.1.0, minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
+minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
   dependencies:
@@ -6682,9 +6699,9 @@ webpack-subresource-integrity@5.1.0:
   dependencies:
     typed-assert "^1.0.8"
 
-webpack@5.74.0:
-  version "5.74.0"
-  resolved "https://registry.npmjs.org/webpack/-/webpack-5.74.0.tgz"
+webpack@5.76.1:
+  version "5.76.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.76.1.tgz#7773de017e988bccb0f13c7d75ec245f377d295c"
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^0.0.51"
