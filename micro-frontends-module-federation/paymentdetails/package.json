@@ -22,7 +22,7 @@
         "babel-loader": "^9.1.2",
         "html-webpack-plugin": "^5.5.1",
         "serve": "^13.0.4",
-        "webpack": "^5.82.1",
+        "webpack": "^5.83.1",
         "webpack-cli": "^4.10.0",
         "webpack-dev-server": "^4.15.0"
     }
