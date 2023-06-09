@@ -19,7 +19,7 @@
         "react-router-dom": "^6.12.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.22.1",
+        "@babel/core": "^7.22.5",
         "@babel/preset-react": "^7.22.3",
         "babel-loader": "^9.1.2",
         "html-webpack-plugin": "^5.5.1",
