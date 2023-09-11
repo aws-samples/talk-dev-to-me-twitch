@@ -18,11 +18,11 @@
     "default": {
         "aws-lambda-powertools": {
             "hashes": [
-                "sha256:1dc08eddd04520cb400085c13db162cf84020d4803192d88c0d2742d77ce3758",
-                "sha256:daa42b1060bc42bf473c984257345bef17e5bded18ec1d6680ce97ca25c1dfbb"
+                "sha256:365daef655d10346ff6c601676feef8399fed127686be3eef2b6282dd97fe88e",
+                "sha256:68da8646b6d2c661615e99841200dd6fa62235c99a07b0e8b04c1ca9cb1de714"
             ],
             "index": "pypi",
-            "version": "==2.23.1"
+            "version": "==2.24.0"
         },
         "boto3": {
             "hashes": [
@@ -34,11 +34,11 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:b4a3a1fcf75011351e2b0d3eb991f51f8d44a375d3e065f907dac67db232fc97",
-                "sha256:d8b0c41c8c75d82f15fee57f7d54a852a99810faacbeb9d6f3f022558a2c330e"
+                "sha256:83d61c1ca781e6ede19fcc4d5dd73004eee3825a2b220f0d7727e32069209d98",
+                "sha256:84f90919fecb4a4f417fd10145c8a87ff2c4b14d6381cd34d9babf02110b3315"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.31.43"
+            "version": "==1.31.44"
         },
         "jmespath": {
             "hashes": [
@@ -100,11 +100,11 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:b4a3a1fcf75011351e2b0d3eb991f51f8d44a375d3e065f907dac67db232fc97",
-                "sha256:d8b0c41c8c75d82f15fee57f7d54a852a99810faacbeb9d6f3f022558a2c330e"
+                "sha256:83d61c1ca781e6ede19fcc4d5dd73004eee3825a2b220f0d7727e32069209d98",
+                "sha256:84f90919fecb4a4f417fd10145c8a87ff2c4b14d6381cd34d9babf02110b3315"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==1.31.43"
+            "version": "==1.31.44"
         },
         "certifi": {
             "hashes": [
