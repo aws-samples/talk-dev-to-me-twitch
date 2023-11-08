@@ -15,7 +15,7 @@
     "@types/aws-lambda": "^8.10.126",
     "@types/jest": "^27.5.0",
     "@types/node": "^20.9.0",
-    "@types/uuid": "^9.0.6",
+    "@types/uuid": "^9.0.7",
     "aws-sam-webpack-plugin": "^0.13.0",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
