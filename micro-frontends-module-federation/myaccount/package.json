@@ -13,7 +13,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "nanoevents": "^7.0.1",
+        "nanoevents": "^9.0.0",
         "react": "^18.0.2",
         "react-dom": "^18.0.2",
         "react-router-dom": "^6.21.1"
