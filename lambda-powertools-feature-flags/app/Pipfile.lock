@@ -27,20 +27,20 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:1efc02be786884034d503d59c018cf7650d0cff9fcb37cd2eb49b802a6fe6111",
-                "sha256:8ca248cc84e7e859e4e276eb9c4309fa01a3e58473bf48d6c33448be870c2bb8"
+                "sha256:4c76ef92af7dbdcea21b196a2699671e82e8814d4cfe570c48eda477dd1aeb19",
+                "sha256:95d2c2bde86a0934d4c461020c50fc1344b444f167654e215f1de549bc77fc0f"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==1.34.17"
+            "version": "==1.34.19"
         },
         "botocore": {
             "hashes": [
-                "sha256:7272c39032c6f1d62781e4c8445d9a1d9140c2bf52ba7ee66bf6db559c4b2427",
-                "sha256:e48a662f3a6919219276b55085e8f73c3347966675f55e9d448be30cf79678ee"
+                "sha256:64352b2f05de5c6ab025c1d5232880c22775356dcc5a53d798a6f65db847e826",
+                "sha256:a4a39c7092960f5da2439efc5f6220730dab634aaff4c1444bbd1dfa43bc28cc"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==1.34.17"
+            "version": "==1.34.19"
         },
         "jmespath": {
             "hashes": [
