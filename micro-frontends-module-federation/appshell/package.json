@@ -21,7 +21,7 @@
         "react-router-dom": "^6.21.3"
     },
     "devDependencies": {
-        "@babel/core": "^7.23.7",
+        "@babel/core": "^7.23.9",
         "@babel/preset-react": "^7.23.3",
         "atriom-plugin": "^1.1.2",
         "babel-loader": "^9.1.3",
