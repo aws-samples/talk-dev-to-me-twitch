@@ -18,12 +18,12 @@
     "default": {
         "aws-lambda-powertools": {
             "hashes": [
-                "sha256:4912e2a7450d9b7a7c289d54f56d5afe0b0141013f745989359cfadd489ef553",
-                "sha256:5fea5d6ae48283db81c43ef881d113d4a9c312babe3340a42fc5bc9349fbdbf6"
+                "sha256:02fafbdaaa0a89faaf8c49777a22996aaba465a099d69b4f1fbfd8c3ae47fc41",
+                "sha256:cfcc41d7125b9527b8fd8c4e3e4b30b971f915c32ec0c6e39573fd9f298a63a8"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8' and python_full_version < '4.0.0'",
-            "version": "==2.34.1"
+            "version": "==2.34.2"
         },
         "boto3": {
             "hashes": [
@@ -76,11 +76,11 @@
         },
         "typing-extensions": {
             "hashes": [
-                "sha256:23478f88c37f27d76ac8aee6c905017a143b0b1b886c3c9f66bc2fd94f9f5783",
-                "sha256:af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd"
+                "sha256:69b1a937c3a517342112fb4c6df7e72fc39a38e7891a5730ed4985b5214b5475",
+                "sha256:b0abd7c89e8fb96f98db18d86106ff1d90ab692004eb746cf6eda2682f91b3cb"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==4.9.0"
+            "version": "==4.10.0"
         },
         "urllib3": {
             "hashes": [
