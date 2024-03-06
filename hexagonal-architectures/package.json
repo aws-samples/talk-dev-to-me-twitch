@@ -12,7 +12,7 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.134",
+    "@types/aws-lambda": "^8.10.136",
     "@types/jest": "^27.5.0",
     "@types/node": "^20.11.24",
     "@types/uuid": "^9.0.8",
