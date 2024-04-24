@@ -12,7 +12,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.2.1",
-    "aws-amplify": "^5.0.22",
+    "aws-amplify": "^6.0.30",
     "aws-sdk": "^2.1165.0",
     "aws-xray-sdk": "^3.3.6",
     "hello_world": "file:functions/createVacationRequest",
