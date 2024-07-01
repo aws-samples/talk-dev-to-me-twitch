@@ -18,12 +18,12 @@
     "default": {
         "aws-lambda-powertools": {
             "hashes": [
-                "sha256:1b95febbf4a909695d53a8fa53eeb8dfd5ef487ae4bee8c44fbaaef9be7c3295",
-                "sha256:abe42f154334ab3d4f4972f7a260103cdcc555cb3c398604c6256241d7b0e1e3"
+                "sha256:606feeb4c233d9f2cfbccc44789cf44e0790ddec6ae9d290dff9ca330ae51934",
+                "sha256:d7a1e2fdf4c8089e5d65fc54ac2f0f4e7fc46ae17f806737e6a1bec494095daf"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8' and python_full_version < '4.0.0'",
-            "version": "==2.40.0"
+            "version": "==2.40.1"
         },
         "boto3": {
             "hashes": [
