@@ -17,7 +17,7 @@
     "aws-xray-sdk": "^3.3.6",
     "hello_world": "file:functions/createVacationRequest",
     "moment": "^2.29.3",
-    "nanoevents": "^7.0.1",
+    "nanoevents": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-moment": "^1.1.2",
