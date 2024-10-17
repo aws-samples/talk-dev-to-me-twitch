@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@aws-amplify/ui-react": "^6.5.3",
+    "@aws-amplify/ui-react": "^6.5.4",
     "@aws-sdk/client-dynamodb": "^3.670.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.9.3",
