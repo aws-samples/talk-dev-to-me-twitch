@@ -9,7 +9,7 @@
     "@emotion/styled": "^11.9.3",
     "@heroicons/react": "^2.0.13",
     "@mui/material": "^6.1.6",
-    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.2.1",
     "aws-amplify": "^6.8.0",
