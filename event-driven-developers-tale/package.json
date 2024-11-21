@@ -6,7 +6,7 @@
     "@aws-amplify/ui-react": "^6.7.0",
     "@aws-sdk/client-dynamodb": "^3.696.0",
     "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.9.3",
+    "@emotion/styled": "^11.13.5",
     "@heroicons/react": "^2.2.0",
     "@mui/material": "^6.1.8",
     "@testing-library/jest-dom": "^6.6.3",
