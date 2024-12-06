@@ -10,7 +10,7 @@
     "@heroicons/react": "^2.2.0",
     "@mui/material": "^6.1.10",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.0.1",
+    "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.2.1",
     "aws-amplify": "^6.10.2",
     "aws-sdk": "^2.1165.0",
