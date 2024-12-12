@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/aws-lambda": "^8.10.146",
     "@types/jest": "^27.5.0",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.2",
     "@types/uuid": "^9.0.8",
     "aws-sam-webpack-plugin": "^0.14.0",
     "jest": "^27.5.1",
