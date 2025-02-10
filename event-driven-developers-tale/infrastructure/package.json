@@ -21,6 +21,6 @@
     "@aws-cdk/aws-lambda": "^1.19.0",
     "@aws-cdk/aws-s3-assets": "^1.19.0",
     "@aws-cdk/core": "^1.32.2",
-    "esbuild": "^0.13.8"
+    "esbuild": "^0.25.0"
   }
 }
