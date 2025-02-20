@@ -28,7 +28,7 @@
     "@aws-sdk/client-dynamodb": "^3.749.0",
     "@aws-sdk/lib-dynamodb": "^3.750.0",
     "aws-sdk": "^2.1692.0",
-    "prettier": "^3.5.0",
+    "prettier": "^3.5.1",
     "source-map-support": "^0.5.21",
     "ts-json-object": "^0.4.1",
     "uuid": "^11.0.5"
