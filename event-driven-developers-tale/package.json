@@ -18,7 +18,7 @@
     "hello_world": "file:functions/createVacationRequest",
     "moment": "^2.29.3",
     "nanoevents": "^9.1.0",
-    "react": "^18.2.0",
+    "react": "^19.2.0",
     "react-dom": "^18.2.0",
     "react-moment": "^1.1.2",
     "react-router-dom": "^6.28.0",
