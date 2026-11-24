@@ -31,6 +31,6 @@
     "prettier": "^3.5.3",
     "source-map-support": "^0.5.21",
     "ts-json-object": "^0.4.1",
-    "uuid": "^11.1.0"
+    "uuid": "^14.0.0"
   }
 }
